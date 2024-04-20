@@ -2,6 +2,7 @@ package com.zdx.Shiina_Mashiro.service;
 
 import com.zdx.Shiina_Mashiro.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.zdx.Shiina_Mashiro.utils.Result;
 
 /**
  * <p>
@@ -13,4 +14,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface UserService extends IService<User> {
 
+    User login(User user);
+
+    User register(User user);
 }

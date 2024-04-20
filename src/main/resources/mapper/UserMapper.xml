@@ -22,5 +22,8 @@
     <sql id="Base_Column_List">
         id, username, password, power, role, nickname, sex, avatar, address, introduce, create_time, update_time
     </sql>
+    <select id="login" resultType="com.zdx.Shiina_Mashiro.entity.User">
+        select * from user where username = #{username} and password = #{password}
+    </select>
 
 </mapper>

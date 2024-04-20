@@ -1,4 +1,4 @@
-package com.zdx.utils;
+package com.zdx.Shiina_Mashiro.utils;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.generator.FastAutoGenerator;

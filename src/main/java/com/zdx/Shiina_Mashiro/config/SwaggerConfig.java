@@ -1,4 +1,4 @@
-package com.zdx.oneruri.config;
+package com.zdx.Shiina_Mashiro.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
@@ -48,42 +48,4 @@ public class SwaggerConfig {
         //用户注册登录
         //用户权限设置
     }
-    @Bean
-    public GroupedOpenApi fileApi() {
-        return GroupedOpenApi.builder()
-                .group("文件相关接口")
-                .pathsToMatch("/file/**")
-                .build();
-    }
-    @Bean
-    public GroupedOpenApi productApi() {
-        return GroupedOpenApi.builder()
-                .group("商品相关接口")
-                .pathsToMatch("/product/**")
-                .build();
-    }
-    @Bean
-    public GroupedOpenApi orderApi() {
-        return GroupedOpenApi.builder()
-                .group("订单相关接口")
-                .pathsToMatch("/order/**")
-                .build();
-    }
-    @Bean
-    public GroupedOpenApi musicApi() {
-        return GroupedOpenApi.builder()
-                .group("音乐相关接口")
-                .pathsToMatch("/music/**")
-                .build();
-    }
-    @Bean
-    public GroupedOpenApi videoApi() {
-        return GroupedOpenApi.builder()
-                .group("视频相关接口")
-                .pathsToMatch("/video/**")
-                .build();
-    }
-
-
-
 }

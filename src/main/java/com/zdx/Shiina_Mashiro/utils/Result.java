@@ -1,5 +1,6 @@
-package com.zdx.utils;
+package com.zdx.Shiina_Mashiro.utils;
 public class Result<T> {
+    public static final String USER_LOGIN_ERROR = "400";
     private String code;
     private String msg;
     private T data;
